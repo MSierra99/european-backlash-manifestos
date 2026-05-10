@@ -1,0 +1,101 @@
+---
+title: "Backlash Politics in European Populist Party Manifestos, 2018–2025"
+author: "Mauricio Sierra"
+format:
+  docx: default
+  html: default
+execute:
+  echo: false
+---
+
+# 1. Introduction
+
+Across Europe, populist and right-wing parties have increasingly mobilized around issues related to national identity, cultural change, immigration, and traditional social values. In recent years, scholars have described these developments as part of a broader politics of backlash, in which political actors react against perceived progressive social transformations associated with globalization, multiculturalism, feminism, and liberal cosmopolitanism (Norris and Inglehart, 2019).
+
+While backlash politics often includes nationalist and anti-immigration rhetoric, it has also increasingly incorporated themes related to gender, family, and traditional morality. At the same time, European populist parties do not articulate backlash politics in identical ways. Some parties strongly emphasize traditional family values and moral conservatism, while others focus more heavily on nationalism, law and order, or anti-multicultural discourse.
+
+This project explores how European populist and right-wing parties emphasize different dimensions of backlash rhetoric in contemporary political discourse. Using manifesto data from the Manifesto Project Database (MPD), the analysis compares seven European parties between 2018 and 2025: Vox (Spain), Alternative for Germany (AfD), Rassemblement National (France), Fratelli d’Italia (Italy), Fidesz (Hungary), Law and Justice (PiS) in Poland, and the Austrian Freedom Party (FPÖ).
+
+The analysis focuses on four dimensions commonly associated with backlash politics: traditional morality, nationalism, anti-multiculturalism, and law-and-order rhetoric. Rather than treating backlash as a single ideological phenomenon, the project examines how parties combine these dimensions differently across cases.
+
+Methodologically, the project uses reproducible quantitative workflows in R and comparative descriptive analysis of manifesto indicators derived from the Manifesto Project Database. The goal is not to establish causal relationships, but rather to provide an exploratory comparative analysis of how backlash-oriented parties structure political rhetoric in contemporary Europe.
+
+The findings suggest substantial variation across parties. While some actors combine strong nationalist and moral-traditionalist rhetoric, others rely more heavily on nationalism or law-and-order discourse without emphasizing traditional morality to the same extent. These patterns indicate that backlash politics in Europe is multidimensional rather than ideologically uniform.
+
+# 2. Theory & Literature
+
+Contemporary research on populism and comparative political behavior has increasingly focused on the emergence of “backlash politics” across advanced democracies. Backlash politics generally refers to political reactions against progressive social and cultural change, particularly changes associated with immigration, multiculturalism, feminism, and liberal cosmopolitanism (Norris and Inglehart, 2019). In Europe, these dynamics have become central to the discourse of many populist and right-wing parties.
+
+One influential explanation argues that support for backlash-oriented parties reflects a broader cultural reaction against post-materialist and progressive value change. Norris and Inglehart (2019) describe this process as a “cultural backlash,” in which sectors of society respond negatively to expanding social liberalism and changing norms surrounding gender, identity, and diversity. From this perspective, backlash politics is not limited to economic grievances, but is also rooted in perceived threats to traditional social hierarchies and national identities.
+
+Research on populism has also emphasized the importance of nationalist and anti-elite rhetoric. Mudde (2007) defines populism as a thin-centered ideology that portrays society as divided between “the pure people” and “the corrupt elite.” While populist parties differ ideologically, many European right-wing populist parties combine anti-elite discourse with nationalism, anti-immigration politics, and cultural traditionalism (Mudde, 2007; Müller, 2016). These parties often frame progressive social change as externally imposed by political, cultural, or transnational elites.
+
+Within this broader literature, scholars have increasingly examined the role of anti-gender and anti-feminist rhetoric in contemporary backlash politics. Kováts (2018) argues that opposition to so-called “gender ideology” has become an important mobilizing frame among conservative and populist actors in Europe. Similarly, Graff and Korolczuk (2022) show how anti-gender discourse frequently intersects with nationalism, religion, and anti-liberal political narratives. Gender equality policies may therefore become symbolic markers of broader cultural and political conflicts.
+
+At the same time, recent comparative research suggests that backlash politics is multidimensional rather than ideologically uniform. Different parties may emphasize distinct combinations of nationalism, traditional morality, law-and-order rhetoric, or anti-multiculturalism depending on their political context and ideological trajectory. Comparative analysis is therefore important for understanding how backlash-oriented parties construct political discourse across countries.
+
+# 3. Data & Methods
+
+This project uses manifesto data from the Manifesto Project Database (MPD), one of the most widely used datasets in comparative political research on party competition and political ideology. The MPD codes party manifestos into thematic categories that capture the relative emphasis parties place on different political issues and ideological dimensions.
+
+The analysis focuses on seven European populist and right-wing parties between 2018 and 2025: Vox (Spain), Alternative for Germany (AfD), Rassemblement National (France), Fratelli d’Italia (Italy), Fidesz (Hungary), Law and Justice (PiS) in Poland, and the Austrian Freedom Party (FPÖ). These parties were selected because they are frequently associated with contemporary backlash politics, nationalism, populism, or anti-liberal political discourse.
+
+The project examines four manifesto dimensions associated with backlash politics:
+
+-   **Traditional morality rhetoric (`per603`)**: positive references to traditional values, religion, and moral conservatism.
+
+-   **Nationalism (`per601`)**: positive references to the national way of life and national identity.
+
+-   **Anti-multiculturalism (`per608`)**: negative references to multiculturalism and cultural diversity.
+
+-   **Law and order rhetoric (`per605`)**: emphasis on security, authority, and social order.
+
+These variables are measured as the percentage of quasi-sentences within party manifestos devoted to each category. Higher values therefore indicate greater rhetorical emphasis on a given dimension.
+
+The analysis uses descriptive comparative methods rather than causal inference or hypothesis testing. First, manifesto data were filtered to include only the selected parties and election periods between 2018 and 2025. Second, average scores for each rhetorical dimension were calculated by party. Finally, the project uses comparative visualizations to examine how parties differ across dimensions of backlash rhetoric.
+
+All data processing and analysis were conducted in R using reproducible workflows based on the `tidyverse` and `ggplot2` packages. The project was developed using Quarto to facilitate transparent and reproducible research reporting.
+
+Because the analysis relies on manifesto coding data, the findings should be interpreted as measures of rhetorical emphasis rather than direct measures of voter attitudes or ideological extremism. In addition, manifesto discourse does not necessarily reflect actual policy implementation or political behavior in government. Nevertheless, manifesto analysis provides a useful comparative framework for examining how parties communicate ideological priorities and political narratives across countries.
+
+# 4. Results
+
+The analysis reveals substantial variation in how European populist and right-wing parties articulate backlash politics in contemporary manifesto discourse. Rather than emphasizing identical themes, parties combine nationalism, traditional morality, anti-multiculturalism, and law-and-order rhetoric in different ways.
+
+![Figure 1. Average Backlash Rhetoric Profiles of European Populist Parties (2018–2025)](Comparative Backlash Profiles of European Populist Parties (2018–2025).png)
+
+**Figure 1. Average manifesto emphasis on traditional morality, nationalism, anti-multiculturalism, and law-and-order rhetoric among selected European populist parties, 2018–2025.**
+
+The comparative profiles reveal several notable patterns. AfD combines relatively high average levels of traditional morality rhetoric with strong nationalist and law-and-order emphasis, suggesting a multidimensional backlash profile. Vox also displays comparatively high average scores across multiple dimensions, including nationalism and anti-multiculturalism, indicating a broad backlash-oriented discourse strategy.
+
+Fidesz stands out primarily for its exceptionally strong average nationalist rhetoric. Although the party also emphasizes traditional morality and law-and-order themes, nationalism appears to function as the dominant organizing frame of its manifesto discourse. This finding suggests that backlash politics may be articulated differently depending on national political context and party trajectory.
+
+By contrast, FPÖ displays comparatively low average traditional morality rhetoric while maintaining stronger nationalist and law-and-order positions. This indicates that nationalist backlash politics does not necessarily depend on strong moral-conservative discourse. Similarly, Fratelli d’Italia appears comparatively moderate across several dimensions relative to other parties included in the analysis.
+
+Overall, the findings suggest that backlash politics in Europe is multidimensional rather than ideologically uniform. While some parties combine strong nationalist, anti-multicultural, and moral-traditionalist rhetoric simultaneously, others rely more selectively on particular dimensions of backlash discourse. These differences highlight the importance of comparative analysis for understanding how parties construct and communicate political reactions against contemporary social and cultural change.
+
+# 5. Conclusion
+
+This project examined how European populist and right-wing parties articulate different dimensions of backlash politics in contemporary manifesto discourse between 2018 and 2025. Using data from the Manifesto Project Database, the analysis compared seven parties across four rhetorical dimensions commonly associated with backlash politics: traditional morality, nationalism, anti-multiculturalism, and law-and-order rhetoric.
+
+The findings suggest that backlash politics in Europe is not ideologically uniform. While some parties combine strong nationalist, anti-multicultural, and moral-traditionalist rhetoric simultaneously, others emphasize more selective forms of backlash discourse. In particular, the analysis identified important differences in the relative emphasis parties place on nationalism and traditional morality.
+
+More broadly, the project highlights the usefulness of comparative manifesto analysis for studying contemporary political discourse. By examining rhetorical emphasis across parties and countries, the analysis provides a comparative perspective on how backlash-oriented actors construct political narratives around culture, identity, and social change.
+
+At the same time, several limitations should be acknowledged. First, manifesto data measure rhetorical emphasis rather than voter attitudes or actual policy implementation. Second, the analysis remains exploratory and descriptive rather than causal. Finally, the selected manifesto indicators cannot fully capture the complexity of anti-gender or anti-feminist political discourse.
+
+Future research could extend this project by incorporating additional parties, longitudinal comparisons, or computational text-analysis approaches using full manifesto texts and Large Language Models. Such approaches could provide a more detailed understanding of how backlash rhetoric is framed and communicated across different political contexts.
+
+Overall, the findings support the argument that backlash politics in Europe is multidimensional and varies substantially across parties and national contexts.
+
+# 6. References
+
+1.  Graff, Agnieszka, and Elżbieta Korolczuk. 2022. *Anti-Gender Politics in the Populist Moment*. Routledge.
+
+2.  Kováts, Eszter. 2018. “Questioning Consensuses: Right-Wing Populism, Anti-Populism, and the Threat of ‘Gender Ideology’.” *Sociological Research Online* 23(2): 528–538.
+
+3.  Mudde, Cas. 2007. *Populist Radical Right Parties in Europe*. Cambridge University Press.
+
+4.  Müller, Jan-Werner. 2016. *What Is Populism?* University of Pennsylvania Press.
+
+5.  Norris, Pippa, and Ronald Inglehart. 2019. *Cultural Backlash: Trump, Brexit, and Authoritarian Populism*. Cambridge University Press.
