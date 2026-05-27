@@ -120,10 +120,6 @@ backlash-politics-llm-analysis/
 │   ├── 05_llm_comparison.R
 │   └── 06_agreement_analysis.R
 │
-├── outputs/
-│   ├── figures/
-│   └── tables/
-│
 └── appendix/
     ├── coding_protocol.md
     └── llm_prompt.md
