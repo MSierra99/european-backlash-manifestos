@@ -1,4 +1,3 @@
-
 # Backlash Politics and LLM-Assisted Political Text Classification
 
 This repository contains a mixed-methods political science research project examining backlash-oriented political discourse in European populist and radical-right parties between 2018 and 2025.
@@ -119,7 +118,6 @@ backlash-politics-llm-analysis/
 │   ├── 04_corpus_construction.R
 │   ├── 05_llm_comparison.R
 │   └── 06_agreement_analysis.R
-│
 │
 └── appendix/
     ├── coding_protocol.md
