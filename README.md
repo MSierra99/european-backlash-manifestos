@@ -76,24 +76,51 @@ The analysis suggests that backlash politics in Europe is multidimensional rathe
 
 ## Repository Structure
 
-```text id="jlwm0p"
-├── data/
-│   ├── raw/
-│   └── processed/
+european-backlash-manifestos/
 │
-├── outputs/
-│   └── figures/
+├── README.md
+├── .gitignore
+├── LICENSE
 │
 ├── paper/
-│   ├── backlash_manifestos.qmd
-│   └── references.bib
+│   ├── paper.qmd
+│   ├── figures/
+│   └── output/
+│       └── paper.pdf
+│
+├── data/
+│   ├── raw/
+│   │   └── MPDataset_MPDS2025a.csv
+│   │
+│   ├── processed/
+│   │   ├── backlash_manifestos.csv
+│   │   └── manifesto_corpus_coded.csv
+│   │
+│   └── llm_results/
+│       ├── chatgpt_classifications.csv
+│       ├── qwen_classifications.csv
+│       └── agreement_analysis.csv
 │
 ├── scripts/
-│   ├── 01_setup_and_import.R
-│   ├── 02_build_corpus.R
-│   └── 03_descriptive_analysis.R
+│   ├── 01_data_preparation.R
+│   ├── 02_manifesto_analysis.R
+│   ├── 03_visualizations.R
+│   ├── 04_corpus_construction.R
+│   ├── 05_llm_comparison.R
+│   └── 06_agreement_analysis.R
 │
-└── README.md
+├── outputs/
+│   ├── figures/
+│   │   ├── traditional_morality.png
+│   │   ├── nationalism.png
+│   │   └── comparative_profiles.png
+│   │
+│   └── tables/
+│       └── agreement_rates.csv
+│
+└── appendix/
+    ├── coding_protocol.md
+    └── llm_prompt.md
 ```
 
 ## Reproducibility
