@@ -168,15 +168,9 @@ The findings suggest that contemporary LLMs can identify broad ideological patte
 backlash-politics-llm-analysis/
 │
 ├── README.md
-├── .gitignore
-├── LICENSE
 │
 ├── paper/
 │   ├── paper.qmd
-│   ├── references.bib
-│   ├── figures/
-│   └── output/
-│       └── paper.pdf
 │
 ├── data/
 │   ├── raw/
@@ -191,9 +185,7 @@ backlash-politics-llm-analysis/
 │   ├── 05_llm_comparison.R
 │   └── 06_agreement_analysis.R
 │
-│
 └── appendix/
-    ├── coding_protocol.md
     └── llm_prompt.md
 ```
 
